@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+    <title>多啦bixia-All is well</title>
+    <meta name="Keywords" content="多啦bixia">
+    <meta name="description" content="多啦bixia个人博客">
+
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="http://huangbixia.cn/zb_users/theme/xiaobao/scripts/html5.js"></script>
+    <script type="text/javascript" src="http://huangbixia.cn/zb_users/theme/xiaobao/scripts/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+</head>
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在加载,请稍后...</div>
+</div>
+<div class="container">
+    <div class="menu">
+        <ul>
+            <li class="navItem"><a href="http://huangbixia.cn">博客主页</a></li>
+            <li class="navItem"><a href="http://huangbixia.cn/works.html">我的作品</a> </li>
+            <li class="navItem"><a href="http://huangbixia.cn/aboutMe.html">我的简历</a> </li>
+        </ul>
+    </div>
+    <div class="bgPic">
+        <img src="images/indexBg.png"/>
+    </div>
+    <div class="footer">
+       <p>Design by: huangbixia.</p>
+       <p>Contact Me: 15220007752@163.com</p>
+    </div>
+</div>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8/jquery.min.js"></script>
+<script>
+    // 等待所有加载
+    $(window).load(function(){
+        $('body').addClass('loaded');
+        $('#loader-wrapper .load_title').remove();
+        $(".navItem").each(function(i){
+            $(this).addClass("show"+(i+1)+"");
+        });
+    });
+</script>
+</body>
+</html>
